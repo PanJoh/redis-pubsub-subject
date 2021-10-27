@@ -28,9 +28,9 @@ export class RedisSubject extends PubSubEngine {
     subClient: RedisClient;
     redisClient: RedisClient;
 
-    constructor() {
+    constructor(host?: string, port?: number) {
         super();
-        this.subClient = redis.createClient();
+        this.subClient = redis.createClient(port ?? 6379, host);
         this.redisClient = this.subClient.duplicate();
         this.handleMessages();
         this.handleRedisErrors();
