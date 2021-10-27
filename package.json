@@ -1,0 +1,20 @@
+{
+  "name": "redis-pubsub-subject",
+  "version": "0.1.2",
+  "description": "a graphql subscriptions compatible redis subject",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johannes Pandis",
+  "license": "MIT",
+  "peerDependencies": {
+    "graphql-subscriptions": "^1.2.1",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/redis": "^2.8.32",
+    "graphql-subscriptions": "^1.2.1",
+    "redis": "^3.1.2"
+  }
+}
